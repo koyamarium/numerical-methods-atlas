@@ -1,0 +1,136 @@
+/* Homepage orientation map; styles are isolated from reading and experiment pages. */
+.home-overview{font:14px/1.75 var(--sans)}
+.home-overview .intro h1{font-size:clamp(32px,3.3vw,48px);line-height:1.45;letter-spacing:-.03em}
+.home-overview a{color:inherit;text-decoration:none}
+.home-overview a:hover{color:var(--orange)}
+.home-overview button{font:inherit;color:inherit;cursor:pointer}
+.home-overview button:focus-visible,.home-overview a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.home-overview h1,.home-overview h2,.home-overview h3,.home-overview p{margin-top:0}
+.home-overview h1,.home-overview h2,.home-overview h3{color:var(--ink)}
+.home-overview h1,.home-overview h2{font-family:var(--serif);font-weight:400}
+.home-overview h1{font-size:clamp(32px,3.3vw,48px);line-height:1.45;letter-spacing:-.03em;margin-bottom:19px}
+.home-overview h1 em{font-style:normal;color:var(--orange)}
+.home-overview h2{font-size:27px;line-height:1.5;margin-bottom:10px}
+.home-overview h3{font-size:15px;font-weight:500;line-height:1.5}
+.home-overview .page-width{max-width:1250px;margin:auto;padding-inline:42px}
+.home-overview .eyebrow{font:10px/1.6 var(--mono);letter-spacing:.09em;color:var(--orange);margin-bottom:13px}
+.home-overview .intro{padding-top:31px;padding-bottom:29px;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:50px;align-items:center}
+.home-overview .intro-description{font-size:14px;line-height:1.9;max-width:680px;margin-bottom:0}
+.home-overview .intro-description strong{font-weight:500;color:var(--ink)}
+.home-overview .intro-summary{border-left:1px solid var(--line);padding-left:27px}
+.home-overview .summary-title{font-size:11px;color:var(--muted);margin:0 0 13px}
+.home-overview .summary-counts{display:flex;gap:24px;margin:0 0 17px}
+.home-overview .summary-counts>div{display:grid;gap:3px}
+.home-overview .summary-counts strong{font:32px/1.1 var(--serif);font-variant-numeric:lining-nums;font-weight:400;color:var(--ink)}
+.home-overview .summary-counts span{font-size:10px;color:var(--muted)}
+.home-overview .quiet-link{font-size:11px;text-decoration:underline;text-underline-offset:4px}
+.home-overview .flow{display:flex;align-items:center;gap:9px;font-size:11px;margin-bottom:0;color:var(--ink)}
+.home-overview .flow .flow-arrow{color:var(--orange);font:17px Georgia,serif}
+.home-overview .section-heading{display:flex;gap:30px;align-items:end;justify-content:space-between;padding-top:25px;border-top:1px solid var(--line);margin-bottom:22px}
+.home-overview .section-heading p{font-size:12px;line-height:1.8;color:var(--muted);max-width:440px;margin:0 0 8px}
+.home-overview .section-heading .eyebrow{font-size:10px;color:var(--orange);margin-bottom:7px}
+.home-overview .map-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:start}
+.home-overview .domain-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.home-overview .domain-button{text-align:left;padding:17px 17px 15px;background:transparent;border:1px solid var(--line);min-width:0;position:relative;min-height:110px;display:flex;flex-direction:column}
+.home-overview .domain-button .domain-number{font:10px/1.2 var(--mono);color:var(--muted);margin-bottom:8px}
+.home-overview .domain-button strong{font-size:15px;line-height:1.5;font-weight:500;color:var(--ink);padding-right:14px}
+.home-overview .domain-button .domain-hint{font-size:10px;color:var(--muted);line-height:1.6;margin-top:5px}
+.home-overview .domain-button:hover{border-color:var(--ink)}
+.home-overview .domain-button[aria-pressed=true]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.home-overview .domain-button[aria-pressed=true] strong{color:var(--paper)}
+.home-overview .domain-button[aria-pressed=true] .domain-hint,.home-overview .domain-button[aria-pressed=true] .domain-number{color:#d7ded4}
+.home-overview .map-index>p{font-size:10px;color:var(--muted);line-height:1.8;margin:14px 0 0}
+.home-overview .domain-panel{background:var(--cream);padding:24px 26px;min-height:390px;min-width:0}
+.home-overview .domain-panel .eyebrow{font-size:10px;margin-bottom:9px}
+.home-overview .domain-panel h3{font-family:var(--serif);font-size:24px;font-weight:400;margin-bottom:10px}
+.home-overview .detail-description{font-size:12px;line-height:1.85;margin-bottom:19px}
+.home-overview .connection{display:grid;grid-template-columns:75px minmax(0,1fr);gap:16px;padding:11px 0;border-top:1px solid #cdd0c3}
+.home-overview .connection-label{font-size:10px;font-weight:500;color:var(--muted);padding-top:3px}
+.home-overview .connection ul{padding:0;margin:0;list-style:none}
+.home-overview .connection li{margin-bottom:9px}
+.home-overview .connection li:last-child{margin-bottom:0}
+.home-overview .connection a{display:flex;align-items:start;gap:10px;justify-content:space-between;font-size:12px;line-height:1.65}
+.home-overview .connection .badge{flex-shrink:0;font-size:8px;line-height:1.65;padding:2px 5px;margin-top:1px;color:var(--ink);border:1px solid #bdc6b8;white-space:nowrap}
+.home-overview .connection .badge.reading{color:#656c63;border-color:#d0d0c3}
+.home-overview .detail-footer{border-top:1px solid #cdd0c3;margin-top:7px;padding-top:13px;display:flex;flex-wrap:wrap;gap:10px 20px;font-size:10px}
+.home-overview .status-legend{margin:18px 0 0;font-size:10px;line-height:1.85;color:var(--muted)}
+.home-overview .guided{padding-block:39px 0}
+.home-overview .guided-intro{font-size:12px;color:var(--muted)}
+.home-overview .guided-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;padding-top:13px}
+.home-overview .guided-route{border-top:1px solid var(--line);padding-top:17px}
+.home-overview .guided-route .eyebrow{font-size:9px;color:var(--muted)}
+.home-overview .guided-route h3{font-family:var(--serif);font-size:21px;font-weight:400;margin-bottom:9px}
+.home-overview .guided-route p{font-size:11px;line-height:1.85;min-height:42px}
+.home-overview .guided-route ol{padding:0;list-style:none;margin:16px 0 0;counter-reset:route}
+.home-overview .guided-route li{counter-increment:route;display:flex;gap:12px;margin-bottom:12px;font-size:11px}
+.home-overview .guided-route li:before{content:counter(route,decimal-leading-zero);font:9px/2 var(--mono);color:var(--orange)}
+.home-overview .guided-route a{text-decoration:underline;text-decoration-color:#b3bab0;text-underline-offset:4px}
+.home-overview .evidence{padding-block:42px 20px}
+.home-overview .evidence-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-block:24px;border-block:1px solid var(--line)}
+.home-overview .evidence h2{font-size:23px;margin-bottom:7px}
+.home-overview .evidence p{font-size:11px;color:var(--muted);margin-bottom:0}
+.home-overview .evidence-links{display:flex;gap:18px;white-space:nowrap;font-size:11px}
+.home-overview .evidence-number{color:var(--orange);font-family:var(--serif);font-size:29px}
+.home-overview .future{padding-block:0 25px}
+.home-overview .future p{font-size:10px;color:var(--muted);margin-bottom:0}
+.home-overview .future a{text-decoration:underline;text-underline-offset:3px}
+@media(min-width:1600px){.home-overview .intro{padding-top:44px;padding-bottom:37px}
+.home-overview .domain-button{min-height:118px}}
+@media(max-width:950px){.home-overview .intro{grid-template-columns:1fr;gap:23px}
+.home-overview .intro-summary{display:flex;align-items:center;gap:20px;border-left:0;padding-left:0}
+.home-overview .summary-title{display:none}
+.home-overview .summary-counts{margin-bottom:0}
+.home-overview .summary-counts strong{font-size:26px}
+.home-overview .intro-summary>.quiet-link{margin-left:auto}
+.home-overview .section-heading{align-items:start}
+.home-overview .section-heading>p{max-width:300px}
+.home-overview .map-layout{gap:20px;grid-template-columns:1fr 1fr}
+.home-overview .domain-button{padding:14px 12px;min-height:115px}
+.home-overview .domain-button strong{font-size:13px}
+.home-overview .domain-panel{padding:21px}
+.home-overview .connection{grid-template-columns:60px minmax(0,1fr);gap:10px}
+.home-overview .connection a{display:block}
+.home-overview .connection .badge{display:inline-block;margin-left:6px}
+.home-overview .guided-list{gap:20px}
+.home-overview .evidence-inner{display:block}
+.home-overview .evidence-links{margin-top:17px}}
+@media(max-width:700px){.home-overview .page-width{padding-inline:22px}
+.home-overview .intro{padding-top:23px;padding-bottom:25px;gap:20px}
+.home-overview h1{font-size:33px}
+.home-overview h2{font-size:25px}
+.home-overview .intro-description{font-size:12px}
+.home-overview .intro-summary{gap:14px;flex-wrap:wrap}
+.home-overview .summary-counts{gap:25px}
+.home-overview .summary-counts strong{font-size:26px}
+.home-overview .intro-summary>.quiet-link{margin-left:0;font-size:10px}
+.home-overview .flow{font-size:10px;gap:7px;flex-wrap:wrap;margin-top:14px}
+.home-overview .section-heading{display:block;padding-top:21px;margin-bottom:18px}
+.home-overview .section-heading>p{max-width:none;font-size:11px}
+.home-overview .map-layout{grid-template-columns:1fr;gap:19px}
+.home-overview .domain-grid{gap:9px}
+.home-overview .domain-button{min-height:101px;padding:13px 12px}
+.home-overview .domain-button strong{font-size:13px}
+.home-overview .domain-button .domain-hint{font-size:9px}
+.home-overview .domain-button .domain-number{margin-bottom:6px}
+.home-overview .map-index>p{font-size:9px}
+.home-overview .domain-panel{padding:21px;min-height:0}
+.home-overview .domain-panel h3{font-size:22px}
+.home-overview .connection{grid-template-columns:64px minmax(0,1fr);gap:12px}
+.home-overview .connection a{display:flex;font-size:11px}
+.home-overview .connection .badge{font-size:8px;margin-left:0}
+.home-overview .guided{padding-top:31px}
+.home-overview .guided-list{grid-template-columns:1fr;gap:20px}
+.home-overview .guided-route p{min-height:0;font-size:12px}
+.home-overview .guided-route h3{font-size:22px}
+.home-overview .guided-route ol{display:flex;flex-wrap:wrap;gap:7px 20px;margin-top:12px}
+.home-overview .guided-route li{margin-bottom:4px;font-size:11px}
+.home-overview .guided-route .eyebrow{margin-bottom:8px}
+.home-overview .evidence{padding-top:33px}
+.home-overview .evidence h2{font-size:22px}
+.home-overview .evidence-links{white-space:normal;flex-wrap:wrap;gap:12px 22px}}
+.home-overview .domain-arrow{position:absolute;right:14px;top:39px;color:var(--muted)}
+.home-overview .domain-button[aria-pressed=true] .domain-arrow{color:#d7ded4}
+.home-overview .home-selection-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.home-example{padding-bottom:40px}.home-example details{border-top:1px solid var(--line);padding-top:20px}.home-example summary{cursor:pointer;font-size:13px;color:var(--ink)}.home-example .hero-experiment{max-width:660px;margin:25px auto 0}.home-example .home-example-description{font-size:12px;line-height:1.8}
+@media(max-width:700px){.home-overview .domain-arrow{top:32px;right:10px}.home-example .hero-experiment{padding:20px}}
+@media(max-width:700px){.home-overview .intro h1{font-size:33px}}

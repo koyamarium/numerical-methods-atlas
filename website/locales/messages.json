@@ -6803,5 +6803,433 @@
   "shock-expansion.4df18123802a": {
     "en": "{method} / stopped before final time",
     "ja": "{method}／最終時刻前に停止"
+  },
+  "home-map.areas.0.name": {
+    "en": "Foundations & stability",
+    "ja": "基礎・安定性"
+  },
+  "home-map.areas.0.hint": {
+    "en": "Differences · CFL · errors · time",
+    "ja": "差分 · CFL · 誤差 · 時間積分"
+  },
+  "home-map.areas.0.question": {
+    "en": "What happens when we discretize?",
+    "ja": "離散化すると、何が起きる？"
+  },
+  "home-map.areas.0.description": {
+    "en": "Start with advection and an oscillator. Distinguish error, numerical diffusion and instability before combining space and time discretizations.",
+    "ja": "まず簡単な移流と振動子から。誤差、数値拡散、不安定性を見分け、空間と時間の刻み方を学びます。"
+  },
+  "home-map.areas.0.groups.0.0.name": {
+    "en": "Linear advection & differences",
+    "ja": "線形移流と差分"
+  },
+  "home-map.areas.0.groups.0.1.name": {
+    "en": "One oscillator, twelve integrators",
+    "ja": "ひとつの振動子、12の積分法"
+  },
+  "home-map.areas.0.groups.1.0.name": {
+    "en": "Upwinding, CFL & von Neumann analysis",
+    "ja": "風上差分・CFL・von Neumann解析"
+  },
+  "home-map.areas.0.groups.2.0.name": {
+    "en": "Change a parameter; inspect stability",
+    "ja": "条件を変えて安定性を見る"
+  },
+  "home-map.areas.0.groups.2.1.name": {
+    "en": "Compare refinement & observed orders",
+    "ja": "解像度と観測次数を比較する"
+  },
+  "home-map.areas.1.name": {
+    "en": "Waves & compressible flow",
+    "ja": "波・圧縮性流体"
+  },
+  "home-map.areas.1.hint": {
+    "en": "Burgers · Euler · shallow water · shocks",
+    "ja": "Burgers · Euler · 浅水 · 衝撃波"
+  },
+  "home-map.areas.1.question": {
+    "en": "How do we transport waves and shocks?",
+    "ja": "波と不連続を、どう運ぶ？"
+  },
+  "home-map.areas.1.description": {
+    "en": "Connect Burgers, traffic, Euler, shallow water and isothermal flow. Compare fluxes and reconstructions on shared problems, separating sharpness from robustness.",
+    "ja": "Burgers、交通流、Euler、浅水、等温流をつなぎます。同じ問題を異なる流束・再構成で比べ、鋭さと頑健性を分けて確かめます。"
+  },
+  "home-map.areas.1.groups.0.0.name": {
+    "en": "Burgers, traffic & shallow-water gallery",
+    "ja": "Burgers・交通流・浅水のギャラリー"
+  },
+  "home-map.areas.1.groups.0.1.name": {
+    "en": "Sod, Shu–Osher & benchmark definitions",
+    "ja": "Sod・Shu–Osherなどの定義"
+  },
+  "home-map.areas.1.groups.1.0.name": {
+    "en": "Riemann fluxes & preconditioning",
+    "ja": "Riemann流束と前処理"
+  },
+  "home-map.areas.1.groups.1.1.name": {
+    "en": "Compare MUSCL, PPM & WENO",
+    "ja": "MUSCL・PPM・WENOを比較する"
+  },
+  "home-map.areas.1.groups.2.0.name": {
+    "en": "Odd–even shock diagnostics",
+    "ja": "衝撃波のodd–even診断"
+  },
+  "home-map.areas.1.groups.2.1.name": {
+    "en": "NASA two-dimensional test catalog",
+    "ja": "NASAの2次元テスト問題"
+  },
+  "home-map.areas.2.name": {
+    "en": "Diffusion & elliptic problems",
+    "ja": "拡散・楕円型問題"
+  },
+  "home-map.areas.2.hint": {
+    "en": "Heat · Poisson · iteration · sparse systems",
+    "ja": "熱 · Poisson · 反復法 · 疎行列"
+  },
+  "home-map.areas.2.question": {
+    "en": "How do we solve diffusing fields?",
+    "ja": "広がる場を、どう解く？"
+  },
+  "home-map.areas.2.description": {
+    "en": "Follow heat diffusion and Poisson problems into linear systems. Consider boundaries, iterative convergence, preconditioning and computational work together.",
+    "ja": "熱拡散とPoisson問題から連立方程式へ。境界条件、反復の収束、前処理、計算量を一緒に見ます。"
+  },
+  "home-map.areas.2.groups.0.0.name": {
+    "en": "Heat, diffusion, Poisson & boundaries",
+    "ja": "熱・拡散・Poissonと境界条件"
+  },
+  "home-map.areas.2.groups.0.1.name": {
+    "en": "A hyperbolic formulation of diffusion",
+    "ja": "双曲型として解く拡散問題"
+  },
+  "home-map.areas.2.groups.1.0.name": {
+    "en": "Thomas, relaxation & multigrid",
+    "ja": "Thomas・緩和法・multigrid"
+  },
+  "home-map.areas.2.groups.1.1.name": {
+    "en": "Krylov, preconditioning & Newton",
+    "ja": "Krylov・前処理・Newton法"
+  },
+  "home-map.areas.2.groups.2.0.name": {
+    "en": "Compare Poisson solver convergence",
+    "ja": "Poisson解法の収束を比較する"
+  },
+  "home-map.areas.2.groups.2.1.name": {
+    "en": "Check against exact & reference solutions",
+    "ja": "厳密解・参照解から確かめる"
+  },
+  "home-map.areas.3.name": {
+    "en": "High order & meshes",
+    "ja": "高次精度・格子"
+  },
+  "home-map.areas.3.hint": {
+    "en": "FEM · DG · spectral methods · coordinates",
+    "ja": "FEM · DG · スペクトル · 座標"
+  },
+  "home-map.areas.3.question": {
+    "en": "Where do unknowns live; how are they represented?",
+    "ja": "どこに未知量を置き、何で表す？"
+  },
+  "home-map.areas.3.description": {
+    "en": "Connect cells, nodes, basis functions and coordinates. Triangles do not imply high order, and high order does not guarantee robustness near discontinuities.",
+    "ja": "セル、節点、基底関数、座標を結びます。三角形だから高精度とは限らず、高次だから不連続に強いとも限りません。"
+  },
+  "home-map.areas.3.groups.0.0.name": {
+    "en": "Structured & unstructured connectivity",
+    "ja": "構造・非構造格子のつながり"
+  },
+  "home-map.areas.3.groups.0.1.name": {
+    "en": "Geophysical A, B & C grids",
+    "ja": "地球物理のA・B・C格子"
+  },
+  "home-map.areas.3.groups.1.0.name": {
+    "en": "Finite elements & Galerkin formulation",
+    "ja": "有限要素法とGalerkinの考え方"
+  },
+  "home-map.areas.3.groups.1.1.name": {
+    "en": "DG & spectral methods in the historical atlas",
+    "ja": "DG・スペクトル法の歴史的な位置"
+  },
+  "home-map.areas.3.groups.2.0.name": {
+    "en": "Inspect modes, nodes & mass matrices",
+    "ja": "モード・節点・質量行列を調べる"
+  },
+  "home-map.areas.3.groups.2.1.name": {
+    "en": "Compare CIP profiles & conservation",
+    "ja": "CIPの形状と保存性を比べる"
+  },
+  "home-map.areas.4.name": {
+    "en": "Particles & kinetic methods",
+    "ja": "粒子・運動論"
+  },
+  "home-map.areas.4.hint": {
+    "en": "SPH · GSPH · LBM · gravity",
+    "ja": "SPH · GSPH · LBM · 重力"
+  },
+  "home-map.areas.4.question": {
+    "en": "What changes beyond a fixed-grid description?",
+    "ja": "格子以外の記述で、何が見える？"
+  },
+  "home-map.areas.4.description": {
+    "en": "Use particles, distributions and Hamiltonian systems to approach fluids and gravity. Distinguish local examples from the literature-only GSPH survey.",
+    "ja": "粒子、分布関数、Hamilton系を入口に、流体と重力を別の表現から読みます。実装例と、文献段階のGSPHを区別します。"
+  },
+  "home-map.areas.4.groups.0.0.name": {
+    "en": "Gravitating particles, PM & Tree",
+    "ja": "重力粒子とPM・Tree"
+  },
+  "home-map.areas.4.groups.0.1.name": {
+    "en": "Lattice Boltzmann methods",
+    "ja": "格子Boltzmann法"
+  },
+  "home-map.areas.4.groups.1.0.name": {
+    "en": "SPH & Inutsuka’s GSPH",
+    "ja": "SPH・犬塚のGSPH"
+  },
+  "home-map.areas.4.groups.2.0.name": {
+    "en": "Hamiltonian maps & energy errors",
+    "ja": "Hamilton写像とエネルギー誤差"
+  },
+  "home-map.areas.4.groups.2.1.name": {
+    "en": "Gravity boundaries, kernels & references",
+    "ja": "重力の境界・核・参照計算"
+  },
+  "home-map.areas.5.name": {
+    "en": "Coupled systems & applications",
+    "ja": "連成系・応用モデル"
+  },
+  "home-map.areas.5.hint": {
+    "en": "MHD · incompressible flow · biology · relativity",
+    "ja": "MHD · 非圧縮 · 生物 · 相対論"
+  },
+  "home-map.areas.5.question": {
+    "en": "What must be preserved in coupled systems?",
+    "ja": "方程式が増えると、何を守る？"
+  },
+  "home-map.areas.5.description": {
+    "en": "Extend into magnetic fields, incompressibility, reactions, biology and relativity. MHD examples and the biology/relativity surveys have different implementation scopes.",
+    "ja": "磁場、非圧縮制約、反応、生物モデル、相対論へ。MHDの計算例と、生物・相対論の文献調査を同じ実装段階とは扱いません。"
+  },
+  "home-map.areas.5.groups.0.0.name": {
+    "en": "Ideal MHD & magnetic divergence",
+    "ja": "理想MHDと磁場の発散"
+  },
+  "home-map.areas.5.groups.0.1.name": {
+    "en": "Twenty-two biological model entries",
+    "ja": "22の生物モデル方程式"
+  },
+  "home-map.areas.5.groups.1.0.name": {
+    "en": "CT, GLM & divergence cleaning",
+    "ja": "CT・GLM・divergence cleaning"
+  },
+  "home-map.areas.5.groups.1.1.name": {
+    "en": "Projection for incompressible flow",
+    "ja": "非圧縮流体の投影法"
+  },
+  "home-map.areas.5.groups.2.0.name": {
+    "en": "Compare standard MHD tests",
+    "ja": "MHD標準テストを比較する"
+  },
+  "home-map.areas.5.groups.2.1.name": {
+    "en": "Developments in SR & GR hydrodynamics",
+    "ja": "特殊・一般相対論流体の発展"
+  },
+  "home-map.eyebrow": {
+    "en": "CONNECT EQUATIONS, METHODS AND VERIFICATION",
+    "ja": "方程式・計算法・検証をつなぐ"
+  },
+  "home-map.title": {
+    "en": "See the whole atlas.",
+    "ja": "数値計算の全体像を、"
+  },
+  "home-map.title-em": {
+    "en": "Find your way in.",
+    "ja": "ひとつの地図から。"
+  },
+  "home-map.description": {
+    "en": "An educational atlas connecting original papers, equations and reproducible examples. Use the map to connect a problem, a method and the evidence that checks it.",
+    "ja": "原論文・数式・再現可能な計算例をつなぐ学習サイトです。下の地図から、扱いたい問題と解法、その確かめ方を見渡せます。"
+  },
+  "home-map.coverage": {
+    "en": "Current coverage",
+    "ja": "現在の収録範囲"
+  },
+  "home-map.counting": {
+    "en": "Counting & scope ↗",
+    "ja": "数え方と実装範囲 ↗"
+  },
+  "home-map.equation": {
+    "en": "Equation",
+    "ja": "方程式"
+  },
+  "home-map.discretize": {
+    "en": "Discretize",
+    "ja": "離散化"
+  },
+  "home-map.solve": {
+    "en": "Solve",
+    "ja": "解く"
+  },
+  "home-map.verify": {
+    "en": "Verify",
+    "ja": "検証"
+  },
+  "home-map.map-title": {
+    "en": "A map of the atlas",
+    "ja": "アトラスの見取り図"
+  },
+  "home-map.map-description": {
+    "en": "Select one of six areas to reveal its models, methods and verification examples. Areas overlap: the same method can connect different problems.",
+    "ja": "6つの入口から領域を選ぶと、関係する対象・方法・検証例が表示されます。領域は重なり合い、同じ手法が複数の問題をつなぎます。"
+  },
+  "home-map.map-label": {
+    "en": "Choose an area",
+    "ja": "分野を選ぶ"
+  },
+  "home-map.models-label": {
+    "en": "Models / objects",
+    "ja": "対象"
+  },
+  "home-map.verify-label": {
+    "en": "Verification",
+    "ja": "確かめ方"
+  },
+  "home-map.reading": {
+    "en": "Read",
+    "ja": "解説"
+  },
+  "home-map.interactive": {
+    "en": "Explore",
+    "ja": "操作・比較"
+  },
+  "home-map.scope": {
+    "en": "“Explore” opens controls or comparisons; “Read” opens a chapter or source guide. Each example has a stated scope; an entry is not necessarily a complete solver.",
+    "ja": "「操作・比較」はグラフや条件を切り替える展示。「解説」は本文・原典を読む入口です。計算例は各展示に記した範囲のもので、すべてが完全なソルバーではありません。"
+  },
+  "home-map.start-area": {
+    "en": "Start with an exhibit in this area →",
+    "ja": "この領域の展示から始める →"
+  },
+  "home-map.inspect-scope": {
+    "en": "Inspect implementation scope ↗",
+    "ja": "実装範囲を確かめる ↗"
+  },
+  "home-map.selected": {
+    "en": "Showing connections for {area}.",
+    "ja": "{area}の関係を表示しました。"
+  },
+  "home-map.start-title": {
+    "en": "Not sure where to start?",
+    "ja": "迷ったら、この順番で。"
+  },
+  "home-map.start-description": {
+    "en": "You do not need to read everything. Choose one route that fits your purpose.",
+    "ja": "全体を一度に読む必要はありません。目的に合う入口をひとつ選んでください。"
+  },
+  "home-map.first-tag": {
+    "en": "FIRST VISIT",
+    "ja": "FIRST VISIT / はじめて"
+  },
+  "home-map.first-title": {
+    "en": "Start with one small experiment.",
+    "ja": "まず、小さな実験から。"
+  },
+  "home-map.first-description": {
+    "en": "Three steps to see motion, error and stability without too many prerequisites.",
+    "ja": "前提を増やしすぎず、動き・誤差・安定性をつかむ3段階。"
+  },
+  "home-map.first-wave": {
+    "en": "See waves in an equation",
+    "ja": "方程式の波を見る"
+  },
+  "home-map.first-step": {
+    "en": "Change the time step",
+    "ja": "刻み幅を変える"
+  },
+  "home-map.first-read": {
+    "en": "Read about error & stability",
+    "ja": "誤差と安定性を読む"
+  },
+  "home-map.compare-tag": {
+    "en": "COMPARE METHODS",
+    "ja": "COMPARE / 比較したい"
+  },
+  "home-map.compare-title": {
+    "en": "Compare methods on one problem.",
+    "ja": "同じ問題で、解法を比べる。"
+  },
+  "home-map.compare-description": {
+    "en": "Look beyond sharpness to error, convergence and robustness.",
+    "ja": "解の鋭さだけでなく、誤差・収束・頑健性を確かめます。"
+  },
+  "home-map.compare-shocks": {
+    "en": "Shocks & reconstruction",
+    "ja": "衝撃波と再構成"
+  },
+  "home-map.compare-poisson": {
+    "en": "Poisson iterations",
+    "ja": "Poissonの反復解法"
+  },
+  "home-map.compare-time": {
+    "en": "Time integration choices",
+    "ja": "時間積分の違い"
+  },
+  "home-map.sources-tag": {
+    "en": "READ THE SOURCES",
+    "ja": "READ / 理論と原典"
+  },
+  "home-map.sources-title": {
+    "en": "Connect the ideas through sources.",
+    "ja": "歴史と原典から、つなげる。"
+  },
+  "home-map.sources-description": {
+    "en": "Follow the lineage of papers or choose a textbook at the right level.",
+    "ja": "論文の系譜を追う入口と、段階に合った教科書の案内。"
+  },
+  "home-map.sources-bibliography": {
+    "en": "Search the bibliography",
+    "ja": "参考文献を探す"
+  },
+  "home-map.sources-books": {
+    "en": "Choose a textbook",
+    "ja": "教科書を選ぶ"
+  },
+  "home-map.evidence-title": {
+    "en": "Follow the evidence behind the numbers.",
+    "ja": "数だけでなく、根拠までたどれる。"
+  },
+  "home-map.evidence-description": {
+    "en": "{chapters} reading chapters and {sources} sources, counted from a shared catalog. All {biology} biological entries are literature surveys.",
+    "ja": "解説{chapters}章・全参考資料{sources}件。共通カタログから集計しています。生物モデル{biology}項目は文献調査です。"
+  },
+  "home-map.inventory": {
+    "en": "Full inventory ↗",
+    "ja": "全収録一覧 ↗"
+  },
+  "home-map.gallery": {
+    "en": "Figures & movies ↗",
+    "ja": "図・動画のギャラリー ↗"
+  },
+  "home-map.glossary": {
+    "en": "Bilingual glossary ↗",
+    "ja": "日英用語集 ↗"
+  },
+  "home-map.future": {
+    "en": "This map shows current coverage. Unstarted areas such as quantum chemistry and DFT are identified in the development roadmap.",
+    "ja": "この地図は現在の収録範囲です。量子化学・DFTなどの未着手分野は、今後の計画で区別します。"
+  },
+  "home-map.roadmap": {
+    "en": "Read the development roadmap ↗",
+    "ja": "今後の計画を見る ↗"
+  },
+  "home-map.sod-summary": {
+    "en": "Watch one example: the Sod shock tube",
+    "ja": "代表例をひとつ見る：Sod衝撃波管"
+  },
+  "home-map.sod-description": {
+    "en": "Compare four Riemann fluxes on one shared computation. Curves are saved Python results; changing a flux changes the displayed comparison.",
+    "ja": "同じ問題を4つのRiemann流束で比較します。曲線は保存したPython計算結果で、流束を選ぶと比較表示が切り替わります。"
   }
 }

@@ -14,6 +14,16 @@ identifies the extensions still to be implemented.
 
 **[Read the published atlas](https://koyamahr.github.io/numerical-methods-atlas/)** — published November 6, 2026. The former address forwards language, chapter, section and search parameters to this edition. Source and ongoing development: [koyamahr/numerical-methods-atlas](https://github.com/koyamahr/numerical-methods-atlas). See the [migration record and rollback information](URL_MIGRATION.md).
 
+## Finding your way
+
+The homepage maps the atlas through six overlapping areas: foundations and
+stability, waves and compressible flow, diffusion and elliptic problems, high
+order and meshes, particles and kinetic methods, and coupled applications.
+Selecting an area connects its models, methods and verification exhibits.
+Three reading routes help first-time visitors, method comparisons and source
+reading. The shared catalog supplies the counts, and each exhibit states its
+scope. The Sod comparison remains available below the map.
+
 ## Getting started
 
 Requires Python 3.9 or later.
