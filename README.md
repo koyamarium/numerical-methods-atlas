@@ -248,3 +248,8 @@ The published edition supports Japanese/English switching and 143 bilingual term
 Reference-element basis functions now have a dedicated [chapter](docs/basis-functions.md) and [interactive notebook](https://koyamahr.github.io/numerical-methods-atlas/#/basis): Legendre modes, nodal Lagrange functions, Gauss/GLL quadrature, exact versus lumped mass, and triangular P1/P2 shapes. Other orthogonal families are explained with their domains and weights.
 
 **Planned extension: quantum chemistry and DFT.** The [development checklist](docs/roadmap.md#planned-quantum-chemistry-and-dft) records Schrödinger eigenproblems, electronic-structure bases, Coulomb/Hartree potentials, Hartree–Fock, Kohn–Sham DFT, SCF mixing and verification examples. Implementation and a dedicated literature review have not started; no release date is assigned.
+
+
+## Licensing / ライセンス
+
+Original implementation code: **MIT** ([LICENSE](LICENSE)). Text, figures, photographs, book material and data are **excluded** and follow separate terms; see [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Public guide: https://koyamahr.github.io/rights/ .

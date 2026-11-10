@@ -100,3 +100,12 @@ const legacyHTML = `<!doctype html><html lang="ja"><head><meta charset="utf-8"><
 fs.writeFileSync(path.join(legacyDirectory, 'index.html'), legacyHTML);
 fs.writeFileSync(path.join(legacyDirectory, '404.html'), legacyHTML);
 fs.copyFileSync('migration.js', path.join(legacyDirectory, 'migration.js'));
+
+// Preserve upstream notices with the redistributed KaTeX styles/fonts.
+fs.mkdirSync('dist/vendor/licenses', {recursive:true});
+for (const [packageName, destination] of [['katex','KaTeX-LICENSE.txt'],['marked','Marked-LICENSE.txt']]) {
+  const source = ['LICENSE','LICENSE.md','LICENSE.txt'].map(name => `node_modules/${packageName}/${name}`).find(name => fs.existsSync(name));
+  if (!source) throw new Error(`Missing upstream license for ${packageName}`);
+  fs.copyFileSync(source, `dist/vendor/licenses/${destination}`);
+}
+for (const file of ['LICENSE','LICENSING.md','THIRD_PARTY_NOTICES.md']) fs.copyFileSync(`../${file}`, `dist/${file === 'LICENSE' ? 'MIT-LICENSE.txt' : file}`);
