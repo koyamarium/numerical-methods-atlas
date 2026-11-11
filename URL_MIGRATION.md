@@ -4,9 +4,9 @@
 
 - 英語名：**An Atlas of Numerical Methods**
 - 日本語名：**数値計算法アトラス**
-- 新しい公開先：`https://koyamahr.github.io/numerical-methods-atlas/`
-- 新しい公開用リポジトリ：`koyamahr/numerical-methods-atlas`
-- 旧URL（新サイトへ転送済み）：`https://koyamahr.github.io/the-art-of-numerical-algorithms/`
+- 新しい公開先：`https://koyamarium.github.io/numerical-methods-atlas/`
+- 新しい公開用リポジトリ：`koyamarium/numerical-methods-atlas`
+- 旧URL（新サイトへ転送済み）：`https://koyamarium.github.io/the-art-of-numerical-algorithms/`
 
 ## 設定と生成物
 

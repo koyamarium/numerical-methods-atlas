@@ -18,7 +18,7 @@
 ![NASA Mach 2.5楔](figures/nasa-wedge-m25.png)
 ![Mach 3前向きステップ](figures/forward-step.png)
 
-`python scripts/build_shock_gallery.py`で再現し、`--reuse`でソースを照合した保存軌道を再描画できます。[計算条件・診断量・ハッシュ](figures/shock-gallery.json)、[最終数値場](figures/shock-gallery.npz)、[ステップ動画の記録](https://koyamahr.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json)を公開します。
+`python scripts/build_shock_gallery.py`で再現し、`--reuse`でソースを照合した保存軌道を再描画できます。[計算条件・診断量・ハッシュ](figures/shock-gallery.json)、[最終数値場](figures/shock-gallery.npz)、[ステップ動画の記録](https://koyamarium.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json)を公開します。
 
 ## 衝撃波を含むNASA問題の未実装項目 {#shock-containing-nasa-cases-still-to-implement}
 

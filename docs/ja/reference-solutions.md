@@ -1,6 +1,6 @@
 # 厳密解・参照解ライブラリ
 
-検証用ライブラリでは「正解」が何を意味するかを明示します。[参照解エクスプローラー](https://koyamahr.github.io/numerical-methods-atlas/#/exact-solutions)には、式、仮定、出典、点値、1次元ではセル平均を備えた**18ケース**を収録しています。参照解を評価する機能であり、数値的なPDEの時間発展は行いません。
+検証用ライブラリでは「正解」が何を意味するかを明示します。[参照解エクスプローラー](https://koyamarium.github.io/numerical-methods-atlas/#/exact-solutions)には、式、仮定、出典、点値、1次元ではセル平均を備えた**18ケース**を収録しています。参照解を評価する機能であり、数値的なPDEの時間発展は行いません。
 
 ## 4種類の参照解 {#four-different-reference-categories}
 

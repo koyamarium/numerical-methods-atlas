@@ -1,6 +1,6 @@
 # Advanced limiters: TVB and positivity preservation
 
-The [limiter notebook](https://koyamahr.github.io/numerical-methods-atlas/#/limiters)
+The [limiter notebook](https://koyamarium.github.io/numerical-methods-atlas/#/limiters)
 includes a TVB scalar experiment and a separate conservative Euler-state
 scaling demonstration. These address different failure modes: loss of accuracy
 near a smooth extremum and inadmissible thermodynamic states.

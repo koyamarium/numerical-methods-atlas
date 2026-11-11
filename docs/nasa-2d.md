@@ -13,7 +13,7 @@ step and [Double Mach Reflection](double-mach.md) complement the NASA cases.
 
 ## Computed shock tests
 
-[Open the shock-containing fields in the gallery](https://koyamahr.github.io/numerical-methods-atlas/#/gallery).
+[Open the shock-containing fields in the gallery](https://koyamarium.github.io/numerical-methods-atlas/#/gallery).
 Both wedges start from uniform freestream with gamma 1.4, density 1 and sound
 speed 1. The independent body-fitted mesh spans x = −0.5 to 1, the lower wall
 y = max(x,0) tan(15°), and the upper boundary y = 1.2. The higher farfield keeps
@@ -34,7 +34,7 @@ cell areas and face normals come from the actual quadrilaterals.
 - **Classical Mach-3 forward-facing step:** a 3 × 1 tunnel with the step at
   x = 0.6 and height 0.2, uniform inflow (density 1.4, pressure 1, velocity 3),
   reflecting walls and an extrapolated exit. A 240 × 80 grid reaches t = 4,
-  with 81 saved states and an MP4. [Watch the shock reflections](https://koyamahr.github.io/numerical-methods-atlas/#/movies?case=forward-step).
+  with 81 saved states and an MP4. [Watch the shock reflections](https://koyamarium.github.io/numerical-methods-atlas/#/movies?case=forward-step).
   This is the classical Emery/Woodward–Colella benchmark, not a NASA-originated
   experiment. The corner treatment differs from the corrected PPM comparison
   in [Woodward–Colella §VI.b](https://www.researchgate.net/publication/222459521_The_numerical_simulation_of_two-dimensional_fluid_flow_with_strong_shocks):
@@ -60,7 +60,7 @@ and only one published grid; t = 4 is an unsteady snapshot.
 Reproduce with `python scripts/build_shock_gallery.py`; `--reuse` renders cached,
 source-checked trajectories. Download [run definitions, diagnostics and hashes](figures/shock-gallery.json),
 [final numerical fields](figures/shock-gallery.npz), and the
-[step movie manifest](https://koyamahr.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json).
+[step movie manifest](https://koyamarium.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json).
 
 ## Shock-containing NASA cases still to implement
 

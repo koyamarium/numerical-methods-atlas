@@ -30,7 +30,7 @@ NASAの15°楔、Mach 2.0／2.5を、独立した物体適合1次HLL・SSPRK2有
 
 ## Web版 {#web-edition}
 
-[Web版](https://koyamahr.github.io/numerical-methods-atlas/)は、初版を歴史アトラス、解説、計算図、文献検索に整理します。各展示が文献・方程式・実行・図・検証範囲をつなぎます。
+[Web版](https://koyamarium.github.io/numerical-methods-atlas/)は、初版を歴史アトラス、解説、計算図、文献検索に整理します。各展示が文献・方程式・実行・図・検証範囲をつなぎます。
 
 ホームのSod比較はPython計算済みMUSCL密度4曲線を切り替えます。図と初期ギャラリー検証記録も完全なソース版とともに公開します。今後も、検証した教育例、原論文図の再現、試作、文献のみ、計画を区別します。
 

@@ -1,7 +1,7 @@
 # Slope limiters: minmod, Superbee, MC, van Leer, and van Albada
 
 Limiters trade linear high-order reconstruction for a nonlinear choice of
-local slope. Open the [limiter notebook](https://koyamahr.github.io/numerical-methods-atlas/#/limiters)
+local slope. Open the [limiter notebook](https://koyamarium.github.io/numerical-methods-atlas/#/limiters)
 to compare five choices on identical grids and time integrators, together with
 first-order and unlimited scalar baselines.
 

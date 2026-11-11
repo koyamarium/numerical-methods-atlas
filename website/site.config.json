@@ -7,9 +7,9 @@
     "lead": "An Atlas of",
     "subject": "Numerical Methods"
   },
-  "publicUrl": "https://koyamahr.github.io/numerical-methods-atlas/",
-  "repositoryUrl": "https://github.com/koyamahr/numerical-methods-atlas",
-  "publicationRepository": "koyamahr/numerical-methods-atlas",
-  "legacyPublicUrl": "https://koyamahr.github.io/the-art-of-numerical-algorithms/",
-  "legacyRepositoryUrl": "https://github.com/koyamahr/the-art-of-numerical-algorithms"
+  "publicUrl": "https://koyamarium.github.io/numerical-methods-atlas/",
+  "repositoryUrl": "https://github.com/koyamarium/numerical-methods-atlas",
+  "publicationRepository": "koyamarium/numerical-methods-atlas",
+  "legacyPublicUrl": "https://koyamarium.github.io/the-art-of-numerical-algorithms/",
+  "legacyRepositoryUrl": "https://github.com/koyamarium/the-art-of-numerical-algorithms"
 }

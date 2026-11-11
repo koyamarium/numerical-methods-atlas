@@ -84,7 +84,7 @@ are introductory demonstrations of magnetic-constraint handling.
 
 ## Time evolution
 
-The [motion gallery](movies.md) now includes separate 64² Orszag–Tang [CT](https://koyamahr.github.io/numerical-methods-atlas/#/movies?case=orszag-tang-ct) and [GLM](https://koyamahr.github.io/numerical-methods-atlas/#/movies?case=orszag-tang-glm) movies. Their actual adaptive-CFL snapshot times and native divergence diagnostics differ. Playback does not supply an equal-accuracy ranking.
+The [motion gallery](movies.md) now includes separate 64² Orszag–Tang [CT](https://koyamarium.github.io/numerical-methods-atlas/#/movies?case=orszag-tang-ct) and [GLM](https://koyamarium.github.io/numerical-methods-atlas/#/movies?case=orszag-tang-glm) movies. Their actual adaptive-CFL snapshot times and native divergence diagnostics differ. Playback does not supply an equal-accuracy ranking.
 
 
 ## HLLD and standard wave tests

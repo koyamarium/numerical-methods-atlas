@@ -1,6 +1,6 @@
 # 日英サイトの実装状況
 
-2026年11月6日、日英版を https://koyamahr.github.io/numerical-methods-atlas/ で公開しました。旧URLからの転送も確認済みです。表示名はAn Atlas of Numerical Methods／数値計算法アトラスです。詳細は[URL移行記録](URL_MIGRATION.md)を参照してください。
+2026年11月6日、日英版を https://koyamarium.github.io/numerical-methods-atlas/ で公開しました。旧URLからの転送も確認済みです。表示名はAn Atlas of Numerical Methods／数値計算法アトラスです。詳細は[URL移行記録](URL_MIGRATION.md)を参照してください。
 
 ## 利用できる部分
 

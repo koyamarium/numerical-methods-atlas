@@ -37,7 +37,7 @@ python scripts/build_movies.py
 python scripts/check_movies.py
 ```
 
-ビルダーは公開フレーム、MP4、[動画カタログ](https://koyamahr.github.io/numerical-methods-atlas/assets/movies/catalog.json)を`website/public/assets/movies`へ保存します。完全な数値スナップショットも、Git対象外の`outputs/movies`へ圧縮NumPy配列で保存します。カタログにはソース・画像・動画・数値状態のハッシュ、ソフトウェア版、手法、境界、物理尺度、各フレーム診断があります。
+ビルダーは公開フレーム、MP4、[動画カタログ](https://koyamarium.github.io/numerical-methods-atlas/assets/movies/catalog.json)を`website/public/assets/movies`へ保存します。完全な数値スナップショットも、Git対象外の`outputs/movies`へ圧縮NumPy配列で保存します。カタログにはソース・画像・動画・数値状態のハッシュ、ソフトウェア版、手法、境界、物理尺度、各フレーム診断があります。
 
 検査ではハッシュ・メタデータを確認し、各画像を開き、MP4を復号して寸法、再生率、全フレーム数を検証します。`--quick --output <directory>`は小格子の短い検査で、カタログにも区別し、公開用の本計算とはしません。
 
@@ -53,7 +53,7 @@ python scripts/check_movies.py
 
 `python scripts/build_multidimensional_gallery.py`で再現できます。[定義・診断量・ソースハッシュ](figures/multidimensional-fields.json)と[計算配列](figures/multidimensional-fields.npz)をダウンロードできます。新しいソルバーや収束実験を追加したわけではなく、既存のFEM・MACの細分化検査は別の検証です。
 
-5本目の動画は`python scripts/build_shock_gallery.py`で作成し、独立した[衝撃波動画カタログ](https://koyamahr.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json)に記録します。プレーヤーは両方のカタログを統合します。完全な保存状態は`outputs/shock-gallery`にあります。
+5本目の動画は`python scripts/build_shock_gallery.py`で作成し、独立した[衝撃波動画カタログ](https://koyamarium.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json)に記録します。プレーヤーは両方のカタログを統合します。完全な保存状態は`outputs/shock-gallery`にあります。
 
 ## 動画だけでは示せないこと {#what-a-movie-does-not-establish}
 

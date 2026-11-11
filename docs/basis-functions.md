@@ -1,6 +1,6 @@
 # Orthogonal polynomials and mesh basis functions
 
-A mesh supplies cells, geometry and connectivity. A **basis** supplies the functions used to represent a field on those cells. The choice of basis is separate from cell shape and variable staggering. The [basis notebook](https://koyamahr.github.io/numerical-methods-atlas/#/basis) makes modes, nodes and their mass matrices visible. The existing [DG advection example](benchmarks.md) already uses Legendre modes internally; this chapter exposes the algebra behind it.
+A mesh supplies cells, geometry and connectivity. A **basis** supplies the functions used to represent a field on those cells. The choice of basis is separate from cell shape and variable staggering. The [basis notebook](https://koyamarium.github.io/numerical-methods-atlas/#/basis) makes modes, nodes and their mass matrices visible. The existing [DG advection example](benchmarks.md) already uses Legendre modes internally; this chapter exposes the algebra behind it.
 
 ## Start on a reference element
 
@@ -107,7 +107,7 @@ Orthogonality always includes a domain and a weight. Changing either changes the
 
 `numart.basis` supplies Legendre/Chebyshev and nodal tabulation, derivatives, affine interval matrices, GLL quadrature, projection, P1/P2 triangles and tensor products. Tests check continuous Legendre orthogonality, GLL exactness limits, cardinal interpolation, polynomial reproduction, partition of unity, derivative reproduction, the GLL summation-by-parts identity, rank-one mass difference and physical Jacobian scaling. The existing DG solver remains restricted to scalar periodic P0/P1/P2 advection.
 
-Reproduce the exhibit with `python scripts/build_basis.py`. [Saved arrays and source hashes](https://koyamahr.github.io/numerical-methods-atlas/basis.json) accompany the figure. This adds reference-element building blocks, not a general curved-mesh assembly or a higher-order fluid solver.
+Reproduce the exhibit with `python scripts/build_basis.py`. [Saved arrays and source hashes](https://koyamarium.github.io/numerical-methods-atlas/basis.json) accompany the figure. This adds reference-element building blocks, not a general curved-mesh assembly or a higher-order fluid solver.
 
 ![Reference-element bases and approximations](figures/basis.png)
 

@@ -1,6 +1,6 @@
 # Exact and reference solutions
 
-A verification library should say what its answer means. The [reference explorer](https://koyamahr.github.io/numerical-methods-atlas/#/exact-solutions) contains **18 cases** with formulas, assumptions, source links, point values and, for one-dimensional cases, cell means. It evaluates references; it does not advance a numerical PDE solution.
+A verification library should say what its answer means. The [reference explorer](https://koyamarium.github.io/numerical-methods-atlas/#/exact-solutions) contains **18 cases** with formulas, assumptions, source links, point values and, for one-dimensional cases, cell means. It evaluates references; it does not advance a numerical PDE solution.
 
 ## Four different reference categories
 

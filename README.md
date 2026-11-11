@@ -5,14 +5,14 @@
 A historical, executable guide to numerical algorithms: the equations they solve,
 the ideas behind their discretizations, and the evidence used to check them.
 This is the **first edition, v0.1.0**, and a companion to
-[The Art of Thermal Instability](https://koyamahr.github.io/the-art-of-thermal-instability/#home).
+[The Art of Thermal Instability](https://koyamarium.github.io/the-art-of-thermal-instability/#home).
 
 Explore the [historical atlas](docs/history.md), run the Python examples, and
 compare the results with analytical solutions and conservation checks. The
 library covers selected educational models; the [roadmap](docs/roadmap.md)
 identifies the extensions still to be implemented.
 
-**[Read the published atlas](https://koyamahr.github.io/numerical-methods-atlas/)** — published November 6, 2026. The former address forwards language, chapter, section and search parameters to this edition. Source and ongoing development: [koyamahr/numerical-methods-atlas](https://github.com/koyamahr/numerical-methods-atlas). See the [migration record and rollback information](URL_MIGRATION.md).
+**[Read the published atlas](https://koyamarium.github.io/numerical-methods-atlas/)** — published November 6, 2026. The former address forwards language, chapter, section and search parameters to this edition. Source and ongoing development: [koyamarium/numerical-methods-atlas](https://github.com/koyamarium/numerical-methods-atlas). See the [migration record and rollback information](URL_MIGRATION.md).
 
 ## Finding your way
 
@@ -82,11 +82,11 @@ New exhibits: [CIP value/gradient transport](docs/cip.md), [Runge–Kutta famili
 
 ## Current priority: shock methods
 
-[Reconstruction and flux comparisons](https://koyamahr.github.io/numerical-methods-atlas/#/reconstruction) add limited parabolic FV, conservative characteristics, FD WENO-Z and a defined AUSM-family baseline. [Stationary odd–even shock diagnostics](https://koyamahr.github.io/numerical-methods-atlas/#/shock-robustness) compare six flux settings, two grids, two shock positions and unperturbed controls. [Roe's Property U](docs/advanced.md#roes-property-u) has parameter-vector and single-wave checks, including an entropy counterexample. Original PPM tracing/steepening/flattening, AUSM+/AUSM+-up and blunt-body/rotated-hybrid tests remain the next steps before new subject areas.
+[Reconstruction and flux comparisons](https://koyamarium.github.io/numerical-methods-atlas/#/reconstruction) add limited parabolic FV, conservative characteristics, FD WENO-Z and a defined AUSM-family baseline. [Stationary odd–even shock diagnostics](https://koyamarium.github.io/numerical-methods-atlas/#/shock-robustness) compare six flux settings, two grids, two shock positions and unperturbed controls. [Roe's Property U](docs/advanced.md#roes-property-u) has parameter-vector and single-wave checks, including an entropy counterexample. Original PPM tracing/steepening/flattening, AUSM+/AUSM+-up and blunt-body/rotated-hybrid tests remain the next steps before new subject areas.
 
 ## Euler reconstruction and full-vector MHD comparisons
 
-[Compare first order, minmod and MC](https://koyamahr.github.io/numerical-methods-atlas/#/flow-comparison) on the NASA wedges and forward step, with exact-cell-average smooth refinement and paired 81-state step clips. [HLLD standard tests](https://koyamahr.github.io/numerical-methods-atlas/#/mhd-tests) add Brio–Wu, circular Alfvén refinement and weak field loops with CT-Contact/GLM diagnostics. Run `python scripts/build_euler_comparison.py` and `python scripts/build_mhd_tests.py` with the movie dependencies to regenerate source-hashed artifacts. Scope and remaining verification are documented in [the NASA chapter](docs/nasa-2d.md) and [the MHD chapter](docs/mhd.md).
+[Compare first order, minmod and MC](https://koyamarium.github.io/numerical-methods-atlas/#/flow-comparison) on the NASA wedges and forward step, with exact-cell-average smooth refinement and paired 81-state step clips. [HLLD standard tests](https://koyamarium.github.io/numerical-methods-atlas/#/mhd-tests) add Brio–Wu, circular Alfvén refinement and weak field loops with CT-Contact/GLM diagnostics. Run `python scripts/build_euler_comparison.py` and `python scripts/build_mhd_tests.py` with the movie dependencies to regenerate source-hashed artifacts. Scope and remaining verification are documented in [the NASA chapter](docs/nasa-2d.md) and [the MHD chapter](docs/mhd.md).
 
 ## Local expansion: equation gallery and solver foundations
 
@@ -121,14 +121,14 @@ and tested linear rotating-shallow-water Fourier symbols.
 
 ## Interactive notebooks
 
-- [Stability laboratory](https://koyamahr.github.io/numerical-methods-atlas/#/experiments): compute periodic FTCS, upwind, LF, and LW advection in the browser. Change the signed Courant number, initial profile, and step count; inspect amplification and export the experiment.
-- [Convergence notebook](https://koyamahr.github.io/numerical-methods-atlas/#/convergence): inspect the original DG and Euler entropy-wave refinement data, switch between elements and unknowns, and read measured convergence orders.
-- [CIP profiles](https://koyamahr.github.io/numerical-methods-atlas/#/cip): cubic-Hermite value/gradient transport, scalar advection, refinement, oscillations, and a conservation counterexample.
-- [Runge–Kutta families](https://koyamahr.github.io/numerical-methods-atlas/#/runge-kutta): nine explicit RK methods, actual nonlinear stages, Butcher tableaus, stability contours, measured orders, and conditional SSP bounds.
-- [Time integration](https://koyamahr.github.io/numerical-methods-atlas/#/time-integration): twelve Python-computed oscillator methods, including unfiltered leapfrog and its startup mode.
-- [Mesh explorer](https://koyamahr.github.io/numerical-methods-atlas/#/meshes): select cells and inspect face-sharing neighbors in structured and irregular meshes.
-- [Hamiltonian maps](https://koyamahr.github.io/numerical-methods-atlas/#/hamiltonian): symplectic Euler, Verlet, Yoshida fourth order, implicit midpoint, and RK4 on two Hamiltonians.
-- [Limiter notebook](https://koyamahr.github.io/numerical-methods-atlas/#/limiters): minmod, Superbee, MC, van Leer, and clipped van Albada; scalar advection, Sod, Sweby bounds, refinement, TVB parameters, and a separate mean-preserving positive Euler reconstruction.
+- [Stability laboratory](https://koyamarium.github.io/numerical-methods-atlas/#/experiments): compute periodic FTCS, upwind, LF, and LW advection in the browser. Change the signed Courant number, initial profile, and step count; inspect amplification and export the experiment.
+- [Convergence notebook](https://koyamarium.github.io/numerical-methods-atlas/#/convergence): inspect the original DG and Euler entropy-wave refinement data, switch between elements and unknowns, and read measured convergence orders.
+- [CIP profiles](https://koyamarium.github.io/numerical-methods-atlas/#/cip): cubic-Hermite value/gradient transport, scalar advection, refinement, oscillations, and a conservation counterexample.
+- [Runge–Kutta families](https://koyamarium.github.io/numerical-methods-atlas/#/runge-kutta): nine explicit RK methods, actual nonlinear stages, Butcher tableaus, stability contours, measured orders, and conditional SSP bounds.
+- [Time integration](https://koyamarium.github.io/numerical-methods-atlas/#/time-integration): twelve Python-computed oscillator methods, including unfiltered leapfrog and its startup mode.
+- [Mesh explorer](https://koyamarium.github.io/numerical-methods-atlas/#/meshes): select cells and inspect face-sharing neighbors in structured and irregular meshes.
+- [Hamiltonian maps](https://koyamarium.github.io/numerical-methods-atlas/#/hamiltonian): symplectic Euler, Verlet, Yoshida fourth order, implicit midpoint, and RK4 on two Hamiltonians.
+- [Limiter notebook](https://koyamarium.github.io/numerical-methods-atlas/#/limiters): minmod, Superbee, MC, van Leer, and clipped van Albada; scalar advection, Sod, Sweby bounds, refinement, TVB parameters, and a separate mean-preserving positive Euler reconstruction.
 - [Experiment guide](docs/experiments.md): equations, provenance, reproducibility, and the limits of each comparison.
 
 ## Run a benchmark
@@ -210,7 +210,7 @@ preservation, GLM error cleaning, linear-system residuals, boundary conditions,
 and multigrid. These checks establish behavior for the tested cases; they do
 not prove general positivity or nonlinear stability.
 
-[GitHub Actions](https://github.com/koyamahr/the-art-of-numerical-algorithms/actions)
+[GitHub Actions](https://github.com/koyamarium/the-art-of-numerical-algorithms/actions)
 runs the numerical checks and gallery generation on Python 3.9 and 3.12.
 Bibliographic notes record whether a source is an original paper, a later
 exposition, or a reference that still needs direct inspection. Regenerate the
@@ -255,11 +255,11 @@ English title: **An Atlas of Numerical Methods**. Japanese title: **数値計算
 
 The published edition supports Japanese/English switching and 143 bilingual terms. Japanese drafts cover 42 of the 43 reading chapters; the new reference-element basis chapter and notebook currently use English. Established experiment notebooks have Japanese controls and explanations. Original bibliography metadata, source notes and image/video lettering remain shared. The drafts still need editorial review. See [implementation status](BILINGUAL_STATUS.md) and the [original migration plan](BILINGUAL_PLAN.md).
 
-Reference-element basis functions now have a dedicated [chapter](docs/basis-functions.md) and [interactive notebook](https://koyamahr.github.io/numerical-methods-atlas/#/basis): Legendre modes, nodal Lagrange functions, Gauss/GLL quadrature, exact versus lumped mass, and triangular P1/P2 shapes. Other orthogonal families are explained with their domains and weights.
+Reference-element basis functions now have a dedicated [chapter](docs/basis-functions.md) and [interactive notebook](https://koyamarium.github.io/numerical-methods-atlas/#/basis): Legendre modes, nodal Lagrange functions, Gauss/GLL quadrature, exact versus lumped mass, and triangular P1/P2 shapes. Other orthogonal families are explained with their domains and weights.
 
 **Planned extension: quantum chemistry and DFT.** The [development checklist](docs/roadmap.md#planned-quantum-chemistry-and-dft) records Schrödinger eigenproblems, electronic-structure bases, Coulomb/Hartree potentials, Hartree–Fock, Kohn–Sham DFT, SCF mixing and verification examples. Implementation and a dedicated literature review have not started; no release date is assigned.
 
 
 ## Licensing / ライセンス
 
-Original implementation code: **MIT** ([LICENSE](LICENSE)). Text, figures, photographs, book material and data are **excluded** and follow separate terms; see [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Public guide: https://koyamahr.github.io/rights/ .
+Original implementation code: **MIT** ([LICENSE](LICENSE)). Text, figures, photographs, book material and data are **excluded** and follow separate terms; see [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Public guide: https://koyamarium.github.io/rights/ .

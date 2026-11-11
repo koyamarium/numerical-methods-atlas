@@ -1,6 +1,6 @@
 # Atlas expansion prepared for review
 
-> Publication update, November 6, 2026: the reviewed expansion and subsequent bilingual/basis additions are now published at https://koyamahr.github.io/numerical-methods-atlas/ . The following is the retained pre-publication review record; current counts and translation scope are in README.md and BILINGUAL_STATUS.md.
+> Publication update, November 6, 2026: the reviewed expansion and subsequent bilingual/basis additions are now published at https://koyamarium.github.io/numerical-methods-atlas/ . The following is the retained pre-publication review record; current counts and translation scope are in README.md and BILINGUAL_STATUS.md.
 
 This candidate adds the equation gallery, solver foundations, source-based
 biology/GSPH/relativistic chapters, Arakawa-grid comparisons and audited
@@ -11,7 +11,7 @@ candidate to the legacy repository does not deploy the new edition there.
 ## Proposed public presentation
 
 Use **An Atlas of Numerical Methods** / **数値計算法アトラス**, with
-`https://koyamahr.github.io/numerical-methods-atlas/` as the new canonical
+`https://koyamarium.github.io/numerical-methods-atlas/` as the new canonical
 publication target. Keep the sibling link to *The Art of Thermal Instability*.
 The existing public site remains at the old URL until cutover; see
 `URL_MIGRATION.md` for the separate legacy landing artifact and publication guard.

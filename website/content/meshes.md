@@ -1,8 +1,8 @@
 # Structured, unstructured, and triangular meshes
 
-A mesh describes geometry **and connectivity**. Cell shape and indexing are different choices: triangles may be obtained by splitting a structured lattice, or connected in an irregular unstructured triangulation. The [mesh explorer](https://koyamahr.github.io/numerical-methods-atlas/#/meshes) makes this distinction visible.
+A mesh describes geometry **and connectivity**. Cell shape and indexing are different choices: triangles may be obtained by splitting a structured lattice, or connected in an irregular unstructured triangulation. The [mesh explorer](https://koyamarium.github.io/numerical-methods-atlas/#/meshes) makes this distinction visible.
 
-The [element-basis chapter](basis-functions.md) supplies the other half of the representation: Legendre modes, nodal Lagrange functions, quadrature and mass matrices, quadrilateral tensor products, and triangular P1/P2 shape functions. The [basis notebook](https://koyamahr.github.io/numerical-methods-atlas/#/basis) shows these functions inside a reference cell.
+The [element-basis chapter](basis-functions.md) supplies the other half of the representation: Legendre modes, nodal Lagrange functions, quadrature and mass matrices, quadrilateral tensor products, and triangular P1/P2 shape functions. The [basis notebook](https://koyamarium.github.io/numerical-methods-atlas/#/basis) shows these functions inside a reference cell.
 
 ## Structured meshes
 

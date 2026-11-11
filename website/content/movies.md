@@ -1,6 +1,6 @@
 # Time-dependent tests: movies and saved states
 
-[Open the motion gallery](https://koyamahr.github.io/numerical-methods-atlas/#/movies).
+[Open the motion gallery](https://koyamarium.github.io/numerical-methods-atlas/#/movies).
 
 Use movies when the evolution is part of the question: a shock reflecting, a vortex advecting, or magnetic structures forming. Steady solutions, manufactured equilibrium profiles, and final elliptic fields remain still figures. A solver residual versus iteration is an algorithmic history, not a physical-time flow movie.
 
@@ -37,13 +37,13 @@ python scripts/build_movies.py
 python scripts/check_movies.py
 ```
 
-The builder writes the published frames, MP4 files, and [movie catalog](https://koyamahr.github.io/numerical-methods-atlas/assets/movies/catalog.json) into `website/public/assets/movies`. It also saves full numerical snapshots as compressed NumPy arrays in the ignored `outputs/movies` directory for local inspection. Source hashes, image/video hashes, numerical-state hashes, software versions, methods, boundary conditions, physical scales, and per-frame diagnostics are recorded in the catalog. The fifth movie is built by `python scripts/build_shock_gallery.py` and has a separate [shock catalog](https://koyamahr.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json); the player combines both catalogs. Its full saved states are in `outputs/shock-gallery`.
+The builder writes the published frames, MP4 files, and [movie catalog](https://koyamarium.github.io/numerical-methods-atlas/assets/movies/catalog.json) into `website/public/assets/movies`. It also saves full numerical snapshots as compressed NumPy arrays in the ignored `outputs/movies` directory for local inspection. Source hashes, image/video hashes, numerical-state hashes, software versions, methods, boundary conditions, physical scales, and per-frame diagnostics are recorded in the catalog. The fifth movie is built by `python scripts/build_shock_gallery.py` and has a separate [shock catalog](https://koyamarium.github.io/numerical-methods-atlas/assets/movies/shock-catalog.json); the player combines both catalogs. Its full saved states are in `outputs/shock-gallery`.
 
 The checker validates hashes and metadata, opens each saved image, and decodes each MP4 to verify its dimensions, playback rate, and complete frame count. A short small-grid build can be made with `--quick --output <directory>`; its catalog is marked as a quick check and is not the published production run.
 
 ## Multidimensional still fields
 
-The [numerical gallery](https://koyamahr.github.io/numerical-methods-atlas/#/gallery)
+The [numerical gallery](https://koyamarium.github.io/numerical-methods-atlas/#/gallery)
 opens with 2D/3D spatial fields, including the five movie entry points above.
 Dimension and subject filters can be combined; all dimensions also includes
 the 1D comparisons and algorithmic diagnostic figures.

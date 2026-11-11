@@ -49,7 +49,7 @@ transonic diffuser/airfoil cases remain implementation candidates.
 
 ## Web edition
 
-[The public web edition](https://koyamahr.github.io/numerical-methods-atlas/)
+[The public web edition](https://koyamarium.github.io/numerical-methods-atlas/)
 organizes the first-edition library as a historical atlas, method reading room,
 computed gallery, and searchable reference library. Each exhibit connects
 literature, equations, execution, figures, and verification scope.
@@ -105,7 +105,7 @@ The new [continuous P1 FEM](fem.md), [sparse/nonlinear solvers](sparse-nonlinear
 have dedicated numerical checks, figures and source-hashed manifests.
 [Chapman–Enskog expansion](chapman-enskog.md) is a formal derivation linked to
 the measured shear viscosity. These educational additions are included in the
-published atlas at https://koyamahr.github.io/numerical-methods-atlas/ . Their
+published atlas at https://koyamarium.github.io/numerical-methods-atlas/ . Their
 implementation limits and remaining verification work are stated in each chapter.
 
 ## Authorized next work
