@@ -1,3 +1,4 @@
+import {buildHomeSearchIndex} from './home-search.js';
 import {buildReadingPages} from './build-reading.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,7 +13,7 @@ const site = JSON.parse(fs.readFileSync('site.config.json', 'utf8'));
 const publicURL = new URL(site.publicUrl);
 if (publicURL.protocol !== 'https:' || publicURL.pathname !== `/${site.publicationRepository.split('/')[1]}/`) throw new Error('Publication URL and repository do not match');
 fs.mkdirSync('dist', { recursive: true });
-for (const f of ['index.html', 'style.css', 'home-overview.css', 'app.js', 'home-overview.js', 'home-overview-data.js', 'reading.js', 'reading-urls.js', 'i18n.js', 'glossary.js', 'experiments.js', 'foundations.js', 'hamiltonian.js', 'movies.js', 'gallery.js', 'comparisons.js', 'shock-methods.js', 'shock-expansion.js', 'poisson.js', 'books.js', 'limiters.js', 'runge-kutta.js', 'cip.js', 'basis.js', 'equations.js', 'reference-solutions.js', 'coverage.js', 'numerics.js', 'favicon.svg']) fs.copyFileSync(f, `dist/${f}`);
+for (const f of ['index.html', 'style.css', 'home-overview.css', 'app.js', 'home-overview.js', 'home-search.js', 'home-overview-data.js', 'reading.js', 'reading-urls.js', 'i18n.js', 'glossary.js', 'experiments.js', 'foundations.js', 'hamiltonian.js', 'movies.js', 'gallery.js', 'comparisons.js', 'shock-methods.js', 'shock-expansion.js', 'poisson.js', 'books.js', 'limiters.js', 'runge-kutta.js', 'cip.js', 'basis.js', 'equations.js', 'reference-solutions.js', 'coverage.js', 'numerics.js', 'favicon.svg']) fs.copyFileSync(f, `dist/${f}`);
 const escapeHTML = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const substitutions = {SITE_TITLE:site.title.en, BRAND_LEAD:site.brand.lead, BRAND_SUBJECT:site.brand.subject, SITE_URL:site.publicUrl, REPOSITORY_URL:site.repositoryUrl, LEGACY_REPOSITORY_URL:site.legacyRepositoryUrl};
 let index = fs.readFileSync('index.html', 'utf8');
@@ -77,6 +78,7 @@ for (const file of fs.readdirSync('content').filter(f => f.endsWith('.md'))) {
   japanese[id].translation_status = status[id].status;
 }
 for (const id of Object.keys(translationManifest.chapters)) if (!documents[id]) throw new Error(`Unknown translated chapter: ${id}`);
+fs.writeFileSync('dist/home-search-index.json', JSON.stringify(buildHomeSearchIndex(documents, japanese, JSON.parse(fs.readFileSync('content/coverage.json','utf8')), JSON.parse(fs.readFileSync('../catalog/glossary.json','utf8')))));
 fs.writeFileSync('dist/content.json', JSON.stringify(documents));
 fs.writeFileSync('dist/content.en.json', JSON.stringify(documents));
 fs.writeFileSync('dist/content.ja.json', JSON.stringify(japanese));

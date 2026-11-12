@@ -134,3 +134,18 @@
 .home-example{padding-bottom:40px}.home-example details{border-top:1px solid var(--line);padding-top:20px}.home-example summary{cursor:pointer;font-size:13px;color:var(--ink)}.home-example .hero-experiment{max-width:660px;margin:25px auto 0}.home-example .home-example-description{font-size:12px;line-height:1.8}
 @media(max-width:700px){.home-overview .domain-arrow{top:32px;right:10px}.home-example .hero-experiment{padding:20px}}
 @media(max-width:700px){.home-overview .intro h1{font-size:33px}}
+
+/* Local chapter search; no query logging or external search service. */
+.home-overview .home-search{padding-top:0;padding-bottom:26px}
+.home-search label{display:block;font-weight:500;margin-bottom:8px}
+.home-search-controls{display:flex;max-width:800px;gap:10px}
+.home-search input{min-width:0;flex:1;font:inherit;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:12px 14px;appearance:none}
+.home-search input:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.home-search-controls button{border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:10px 22px;flex-shrink:0}
+.home-search #home-search-hint{font-size:11px;color:var(--muted);margin:8px 0 0}
+.home-search #home-search-status{font-size:12px;margin:10px 0 0}
+.home-search ol{padding:0;margin:12px 0 0;list-style:none;max-width:800px}
+.home-search li{border-top:1px solid var(--line);padding:11px 0}
+.home-search li a{display:block;font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.home-search li p,.home-search li small{font-size:12px;color:var(--muted);margin:3px 0 0}
+@media(max-width:700px){.home-search-controls button{padding-inline:14px}.home-search input{font-size:16px}}

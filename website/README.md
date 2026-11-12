@@ -52,6 +52,16 @@ sync with the numerical-library edition using the commands above. The
 Public hosting uses GitHub Pages through `.github/workflows/pages.yml`, because
 this workspace does not enable public Sites hosting.
 
+## Homepage search
+
+The homepage searches chapter titles, section headings, model/method labels and
+Japanese/English glossary aliases. `build.mjs` writes `home-search-index.json`
+from the same chapter, coverage and glossary sources as the reading site.
+Results link directly to the current-language chapter or matching section;
+untranslated chapters use their English edition. Search runs in the browser,
+loads its index on first use and does not log or transmit query text. This is
+navigation search, not full-text retrieval, an LLM answer or a popularity ranking.
+
 ## Reading routes
 
 Every available reading chapter is also published as full-text static HTML at
